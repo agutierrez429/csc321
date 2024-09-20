@@ -10,6 +10,7 @@ int main(void) {
 	char inputChar;
 	char compareChar = 'a';
 	float z = 0.0;
+
 	//INTEGER
 	printf("Enter an integer: ");
 	scanf("%d", &x);
@@ -18,11 +19,12 @@ int main(void) {
 		printf("You input a number larger than 5 \n");
 	}
 	else if(x == 5) {
-		printf("You input 5 \n");
+		printf("Your input is equal to 5 \n");
 	}
 	else {
 		printf("You input a number less than 5 \n");
 	}
+
 	//DOUBLE
 	printf("Enter a double: ");
 	scanf("%lf", &d);
@@ -36,6 +38,7 @@ int main(void) {
 	else {
 		printf("You input a number that is greater than 10 \n");
 	}
+
 	//CHAR
 	printf("Enter a character: ");
 	scanf(" %c", &inputChar);
@@ -49,9 +52,10 @@ int main(void) {
 	else {
 		printf("You input something other than a character");
 	}
+
 	//FLOAT
 	printf("Enter a float: ");
-	scanf("%f", &z);
+	scanf(" %f", &z);
 
 	if(z > 3.5) {
 		printf("You input a number greater than 3.5 \n");
