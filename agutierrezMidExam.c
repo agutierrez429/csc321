@@ -14,8 +14,10 @@ int main(void) {
 
 	if (userNum == myNum) {
 		printf("You Won!! Your Prize is $100!\n");
-	}else {
+	}else if (userNum != myNum) {
 		printf("You Lost!! Take the L! Goodbye.\n");
+	}else {
+		printf("Error! Invalid Input");
 	}
 
 	return EXIT_SUCCESS;
